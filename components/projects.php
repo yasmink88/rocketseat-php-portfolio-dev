@@ -1,21 +1,13 @@
 <?php
-    $colors = [
-        'fuchsia',
-        'lime',
-        'sky',
-        'red',
-        'amber',
-    ];
-
-    $title    = 'Meu Trabalho';
-    $subtitle = 'Veja os projetos em destaque';
+    $project_title    = 'Meu Trabalho';
+    $project_subtitle = 'Veja os projetos em destaque';
 
     $projects = [
         [
-            'name' => 'Travelgram',
+            'name'        => 'Travelgram',
             'description' => 'Rede social onde as pessoas mostram os registros de suas viagens pelo mundo',
-            'image' => '../assets/image.png',
-            'stacks' => [
+            'image'       => '../assets/image.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -23,10 +15,10 @@
             ]
         ],
         [
-            'name' => 'Página de receita',
+            'name'        => 'Página de receita',
             'description' => 'Página com o passo a passo de uma receita para cupcakes',
-            'image' => '../assets/image-1.png',
-            'stacks' => [
+            'image'       => '../assets/image-1.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -34,10 +26,10 @@
             ]
         ],
         [
-            'name' => 'Tech News',
+            'name'        => 'Tech News',
             'description' => 'Homepage de um portal de notícias sobre a área de tecnologia',
-            'image' => '../assets/image-2.png',
-            'stacks' => [
+            'image'       => '../assets/image-2.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -45,10 +37,10 @@
             ]
         ],
         [
-            'name' => 'Refund',
+            'name'        => 'Refund',
             'description' => 'Um sistema para pedido e acompanhamento de reembolso',
-            'image' => '../assets/Thumbnail_Project-04.png',
-            'stacks' => [
+            'image'       => '../assets/Thumbnail_Project-04.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -56,10 +48,10 @@
             ]
         ],
         [
-            'name' => 'Página de turismo',
+            'name'        => 'Página de turismo',
             'description' => 'Página com as principais informações para quem quer viajar para Busan',
-            'image' => '../assets/Thumbnail_Project-05.png',
-            'stacks' => [
+            'image'       => '../assets/Thumbnail_Project-05.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -67,10 +59,10 @@
             ]
         ],
         [
-            'name' => 'Zingen',
+            'name'        => 'Zingen',
             'description' => 'RLanding Page completa e responsiva de um aplicativo de Karaokê',
-            'image' => '../assets/Thumbnail_Project-06.png',
-            'stacks' => [
+            'image'       => '../assets/Thumbnail_Project-06.png',
+            'stacks'      => [
                 'PHP',
                 'HTML',
                 'CSS',
@@ -83,8 +75,8 @@
 
 <div class="flex flex-col items-center text-gray-100 text-center gap-10 py-20">
     <div class=" title">
-        <h2 class="text-red-400 text-[20px]"><?= $title ?></h2>
-        <span class="text-[24px]"><?= $subtitle ?></span>
+        <h2 class="text-red-400 text-[20px]"><?= $project_title ?></h2>
+        <span class="text-[24px]"><?= $project_subtitle ?></span>
     </div>
     <div class="projects grid grid-cols-2 gap-10 w-full">
         <?php foreach ($projects as $project ) : ?>

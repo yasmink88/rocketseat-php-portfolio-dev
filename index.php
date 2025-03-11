@@ -16,6 +16,9 @@
 	<section id="projects" class="w-[1024px] mx-auto flex justify-center items-center">
 		<?php include 'components/projects.php'; ?>
 	</section>
+	<section id="contact" class="bg-[url(/assets/Background_Contacts.png)] bg-cover bg-no-repeat flex justify-center items-center">
+		<?php include 'components/contact.php'; ?>
+	</section>
 
 
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>

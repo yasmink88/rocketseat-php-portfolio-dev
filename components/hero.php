@@ -12,7 +12,7 @@
     ];
 
     $colors = [
-        'fuchsia',
+        'purple',
         'lime',
         'sky',
         'red',
