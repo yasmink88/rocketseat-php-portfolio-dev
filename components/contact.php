@@ -29,12 +29,12 @@
 
 <div class="flex flex-col items-center text-gray-100 text-center gap-10 py-20 w-[500px]">
     <div class=" title">
-        <h2 class="text-red-400 text-[20px]"><?= $contact_title ?></h2>
-        <span class="text-[24px]"><?= $contact_subtitle ?></span>
-        <p class="text-gray-400 text-[14px]"><?= $contact_description ?></p>
+        <h2 class="contact-title text-red-400 text-[20px]"><?= $contact_title ?></h2>
+        <span class="contact-subtitle text-[24px]"><?= $contact_subtitle ?></span>
+        <p class="contact-description text-gray-400 text-[14px]"><?= $contact_description ?></p>
     </div>
     <div class="links w-full">
-        <ul class="flex flex-col gap-4 text-gray-300">
+        <ul class="socials flex flex-col gap-4 text-gray-300">
             <?php foreach ( $socials as $social ) : ?>
                 <li>
                     <a href="<?= $social['url'] ?>" class="bg-gray-800 rounded-xl py-4 px-6 w-full flex justify-between items-center">

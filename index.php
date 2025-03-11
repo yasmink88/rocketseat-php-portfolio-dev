@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A simple portfolio website to showcase my work as a PHP developer">
 	<meta name="keywords" content="portfolio, developer, PHP, HTML, CSS, JavaScript">
+	<link rel="stylesheet" href="styles/main.css">
 	<title>Homepage - Portfolio Dev</title>
 </head>
 

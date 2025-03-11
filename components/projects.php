@@ -1,6 +1,6 @@
 <?php
-    $project_title    = 'Meu Trabalho';
-    $project_subtitle = 'Veja os projetos em destaque';
+    $projects_title    = 'Meu Trabalho';
+    $projects_subtitle = 'Veja os projetos em destaque';
 
     $projects = [
         [
@@ -75,16 +75,16 @@
 
 <div class="flex flex-col items-center text-gray-100 text-center gap-10 py-20">
     <div class=" title">
-        <h2 class="text-red-400 text-[20px]"><?= $project_title ?></h2>
-        <span class="text-[24px]"><?= $project_subtitle ?></span>
+        <h2 class="projects-title text-red-400 text-[20px]"><?= $projects_title ?></h2>
+        <span class="projects-subtitle text-[24px]"><?= $projects_subtitle ?></span>
     </div>
-    <div class="projects grid grid-cols-2 gap-10 w-full">
+    <div class="projects grid grid-cols-2 gap-6 w-full">
         <?php foreach ($projects as $project ) : ?>
-            <div class="project bg-gray-800 rounded-2xl p-4 flex gap-6 flex-1">
+            <div class="project bg-gray-800 rounded-2xl p-4 flex gap-4 flex-1">
                 <img class="w-1/3 h-auto object-cover rounded-2xl" src="<?= $project['image'] ?>" alt="Project image">
-                <div class="text-left flex flex-col gap-4 flex-2">
-                    <h3 class="text-[16px]"><?= $project['name'] ?></h3>
-                    <p class="text-[14px]"><?= $project['description'] ?></p>
+                <div class="text-left flex flex-col gap-2 flex-2">
+                    <h3 class="project-title text-[16px]"><?= $project['name'] ?></h3>
+                    <p class="project-descritpion text-[14px] text-gray-400"><?= $project['description'] ?></p>
                     <div class="stack">
                         <ul class="flex flex-row gap-2 text-gray-900 flex-wrap text-[12px]">
                             <?php foreach ( $project['stacks'] as $position => $stack ) : ?>
